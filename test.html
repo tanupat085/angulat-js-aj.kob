@@ -1,0 +1,17 @@
+<script src="angular-1.8.2/angular.min.js"></script>
+<script>
+    var app = angular.module('myapp' , [] );
+
+    app.controller('TestController' , function($scope){
+        $scope.message = "hello tanupat" ; 
+    });
+
+</script>
+
+<div ng-app = "myapp">
+    <div ng-controller="TestController">
+        message = {{ message }}
+    </div>
+</div>
+
+
